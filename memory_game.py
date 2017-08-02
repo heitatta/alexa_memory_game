@@ -36,5 +36,12 @@ def answer(first, second, third):
     return statement(msg)
 
 
+@ask.default_intent
+def default_intent():
+    if 'numbers' in session.attributes:
+        return next_round()
+    return question('unknonw')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
