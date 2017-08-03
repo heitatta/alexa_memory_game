@@ -1,5 +1,8 @@
 welcome: Welcome to memory game. I'm going to say three numbers for you to repeat backwards. Ready?
 
+welcome_re: |
+  Ready?
+
 round: Can you repeat the numbers {{ numbers|join(", ") }} backwards?
 
 win: Good job!
@@ -15,3 +18,14 @@ wave: |
       Enjoy the sounds of the ocean.
       <audio src='https://s3.amazonaws.com/ask-storage/tidePooler/OceanWaves.mp3'/>
   </speak>
+
+stop_bye: |
+  Goodbye!
+
+cancel_bye: |
+  OK, goodbye!
+
+help_text: |
+  This is a memory game. I'm going to say three numbers for you to
+  repeat backwards.
+

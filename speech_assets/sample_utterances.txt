@@ -1,0 +1,2 @@
+AnswerIntent {first} {second} {third}
+AnswerIntent {first} {second} and {third}
